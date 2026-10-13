@@ -214,3 +214,15 @@ button:hover {
   flex-direction: auto;
   height: auto;
 }
+
+.main2  {
+  display: flex;
+  flex-direction: auto;
+  height: auto;
+}
+
+.rzecz:hover {
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+}

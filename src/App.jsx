@@ -1,16 +1,27 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import { Route, Routes, Link } from 'react-router'
 import './App.css'
+import Info from './strony/Info'
+import Strona from './strony/Stona'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <header className="nazwaSklepu">
+
+
+      <nav>
+        <Link to="/Info">info</Link> <br></br>
+        <Link to="/Strona">Strona</Link>
+      </nav>
+
+        <Routes>
+          <Route path="/Info" element={<Info />} />
+          <Route path="/Strona" element={<Strona />} />
+        </Routes>
+
+
+      {/* <header className="nazwaSklepu">
         <h1 className="nazwaSklepu">magasin de vêtements</h1>
       </header>
       <aside className="kategorie">
@@ -24,8 +35,9 @@ function App() {
         <li><a href="#">Sportowe</a></li> 
         <hr />
         <h1>Socjale</h1>
-      </aside>
-      <main className="produkty">
+      </aside> */}
+    
+      {/* <main className="produkty">
         <div className="main">
        <div className="products">
           <img src="public/images.jpg" alt="product" className="rzecz"/>
@@ -36,14 +48,31 @@ function App() {
           <button> Dodaj do koszyka</button>
         </div>
         <div className="products">
-          <img src="public/hoodie.avif" alt="product" className="rzecz" />
-          <button> Dodaj do koszyka</button>
+        <img src="public/hoodie.avif" alt="product" className="rzecz" />
+        <button> Dodaj do koszyka</button>
         </div>
         <div className="products">
           <img src="public/kurtka.avif" alt="product" className="rzecz" />
           <button> Dodaj do koszyka</button>
         </div>
-        
+        </div>
+        <div className="main2">
+          <div className="products">
+          <img src="public/kurtka.avif" alt="product" className="rzecz" />
+          <button> Dodaj do koszyka</button>
+        </div>
+        <div className="products">
+          <img src="public/hoodie.avif" alt="product" className="rzecz" />
+          <button> Dodaj do koszyka</button>
+        </div>
+        <div className="products">
+          <img src="public/images.jpg" alt="product" className="rzecz" />
+          <button> Dodaj do koszyka</button>
+        </div>
+        <div className="products">
+          <img src="public/pobrane.webp" alt="product" className="rzecz" />
+          <button> Dodaj do koszyka</button>
+        </div>
         </div>
       </main>
       <footer>
@@ -51,8 +80,9 @@ function App() {
         <span><a href="#">Contact us</a></span>
         <span><a href="#">Faq</a></span>
         <span><a href="#">Więcej informacji</a></span>
-      </footer>
+      </footer> */}
 
+       
     </>
   )
 }
