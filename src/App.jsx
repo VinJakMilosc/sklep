@@ -1,7 +1,6 @@
 import { Route, Routes, Link } from 'react-router'
 import './App.css'
 import Info from './strony/Info'
-import Strona from './strony/Stona'
 
 
 function App() {
@@ -10,18 +9,18 @@ function App() {
     <>
 
 
-      <nav>
+      {/* <nav>
         <Link to="/Info">info</Link> <br></br>
         <Link to="/Strona">Strona</Link>
-      </nav>
+      </nav> */}
 
-        <Routes>
+        {/* <Routes>
           <Route path="/Info" element={<Info />} />
           <Route path="/Strona" element={<Strona />} />
-        </Routes>
+        </Routes> */}
 
 
-      {/* <header className="nazwaSklepu">
+      <header className="nazwaSklepu">
         <h1 className="nazwaSklepu">magasin de vêtements</h1>
       </header>
       <aside className="kategorie">
@@ -35,13 +34,18 @@ function App() {
         <li><a href="#">Sportowe</a></li> 
         <hr />
         <h1>Socjale</h1>
-      </aside> */}
+      </aside>
     
-      {/* <main className="produkty">
+      <main className="produkty">
         <div className="main">
        <div className="products">
-          <img src="public/images.jpg" alt="product" className="rzecz"/>
-          <button> Dodaj do koszyka</button>
+        <nav>
+          <Link to="/Info"><img src="public/images.jpg" alt="product" className='rzecz'/></Link> <br></br>
+        </nav>
+
+        <Routes>
+          <Route path="/Info" element={<Info />} />
+        </Routes>
         </div>
         <div className="products">
           <img src="public/pobrane.webp" alt="product" className="rzecz" />
@@ -80,7 +84,7 @@ function App() {
         <span><a href="#">Contact us</a></span>
         <span><a href="#">Faq</a></span>
         <span><a href="#">Więcej informacji</a></span>
-      </footer> */}
+      </footer>
 
        
     </>

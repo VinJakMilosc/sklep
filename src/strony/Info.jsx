@@ -1,7 +1,16 @@
+import { Route, Routes, Link } from 'react-router'
+import App from '../App';
 function Info() {
     return (
         <>
-        <h1>działa?</h1>
+         <nav>
+        <Link to="/App"><button> Dodaj do koszyka</button></Link> <br></br>
+      </nav>
+
+      <Routes>
+          <Route path="/App" element={<App />} />
+        </Routes>
+        
         </>
     )
 }
