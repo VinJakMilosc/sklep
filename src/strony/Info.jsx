@@ -3,8 +3,8 @@ import App from '../App';
 function Info() {
     return (
         <>
-         <nav>
-        <Link to="/App"><button> Dodaj do koszyka</button></Link> <br></br>
+      <nav>
+        <Link to="/App"><button> Dodaj do koszyka</button></Link>
       </nav>
 
       <Routes>
